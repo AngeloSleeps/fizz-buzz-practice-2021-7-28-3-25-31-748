@@ -6,6 +6,8 @@ public class FizzBuzz {
         StringBuilder word = new StringBuilder();
         if(order % 3 == 0) {
             word.append(FIZZ);
+        } else if (order % 5 == 0) {
+            word.append("Buzz");
         }
         return word.toString();
     }
