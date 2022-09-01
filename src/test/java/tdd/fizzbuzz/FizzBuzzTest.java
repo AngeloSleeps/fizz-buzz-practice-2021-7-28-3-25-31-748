@@ -57,7 +57,7 @@ public class FizzBuzzTest {
     @Test
     void should_return_FizzWhizz_when_countOf_given_input_21() {
         //given
-        String expected = "FizzBuzz";
+        String expected = "FizzWhizz";
         int input = 21;
         //when
         String result = fizzBuzz.countOf(input);
