@@ -9,6 +9,8 @@ public class FizzBuzz {
             word.append(FIZZ);
         } else if (order % 5 == 0) {
             word.append(BUZZ);
+        } else if (order % 7 == 0) {
+            word.append("Whizz");
         }
         return word.toString();
     }
