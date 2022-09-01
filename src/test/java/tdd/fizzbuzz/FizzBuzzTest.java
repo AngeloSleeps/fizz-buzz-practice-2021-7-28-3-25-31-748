@@ -65,4 +65,15 @@ public class FizzBuzzTest {
         assertEquals(expected,result);
     }
 
+    @Test
+    void should_return_buzzwhizz_when_countOf_given_input_35() {
+        //given
+        String expected = "BuzzWhizz";
+        int input = 35;
+        //when
+        String result = fizzBuzz.countOf(input);
+        //then
+        assertEquals(expected,result);
+    }
+
 }
