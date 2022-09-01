@@ -1,4 +1,24 @@
 package tdd.fizzbuzz;
 
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
+import static org.junit.jupiter.api.Assertions.*;
+
 public class FizzBuzzTest {
+    private FizzBuzz fizzBuzz;
+    @BeforeEach
+    void setUpForEach() {
+        fizzBuzz = new FizzBuzz();
+    }
+    @Test
+    void should_return_fizz_when_countOf_given_input_3() {
+        //given
+        String expected = "Fizz";
+        int input = 3;
+        //when
+        String result = fizzBuzz.countOf();
+        //then
+        assertEquals(expected, result);
+    }
+
 }
