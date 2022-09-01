@@ -7,27 +7,14 @@ public class FizzBuzz {
 
     public String countOf(int order) {
         StringBuilder word = new StringBuilder();
-        if (isMultipleOfThree(order) && isMultipleOfFive(order) && isMultipleOfSeven(order)) {
-            word.append(FIZZ)
-                    .append(BUZZ)
-                    .append(WHIZZ);
-        }
-        else if (isMultipleOfThree(order) && isMultipleOfFive(order)) {
-            word.append(FIZZ)
-                    .append(BUZZ);
-        } else if (isMultipleOfThree(order) && isMultipleOfSeven(order)) {
-            word.append(FIZZ)
-                    .append(WHIZZ);
-        } else if (isMultipleOfFive(order) && isMultipleOfSeven(order)) {
-            word.append(BUZZ)
-                    .append(WHIZZ);
-        } else if (isMultipleOfFive(order)) {
-            word.append(BUZZ);
-        } else if (order % 7 == 0) {
-            word.append(WHIZZ);
-        } else if (isMultipleOfThree(order)) {
+
+        if (isMultipleOfThree(order))
             word.append(FIZZ);
-        }
+        if (isMultipleOfFive(order))
+            word.append(BUZZ);
+        if (isMultipleOfSeven(order))
+            word.append(WHIZZ);
+
         return word.toString();
     }
 
