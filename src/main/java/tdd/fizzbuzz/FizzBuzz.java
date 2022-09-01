@@ -9,6 +9,9 @@ public class FizzBuzz {
         if(order % 3 == 0 && order % 5 == 0) {
             word.append(FIZZ)
                     .append(BUZZ);
+        } else if (order % 3 == 0 && order % 7 == 0) {
+            word.append(FIZZ)
+                    .append(WHIZZ);
         } else if (order % 5 == 0) {
             word.append(BUZZ);
         } else if (order % 7 == 0) {
