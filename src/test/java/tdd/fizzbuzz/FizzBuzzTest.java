@@ -16,7 +16,7 @@ public class FizzBuzzTest {
         String expected = "Fizz";
         int input = 3;
         //when
-        String result = fizzBuzz.countOf();
+        String result = fizzBuzz.countOf(input);
         //then
         assertEquals(expected, result);
     }
